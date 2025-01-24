@@ -1,0 +1,22 @@
+# Packet Tracer - Configure DHCP on a Wireless Router
+
+This project demonstrates the configuration of a wireless router to assign IP addresses dynamically using DHCP. It includes both wired and wireless devices.
+
+## **Key Features**
+- DHCP Server configuration on a wireless router.
+- Connection of wired and wireless clients.
+- Verification of network connectivity.
+
+## **Network Diagram**
+![Network Diagram](network-diagram.png)
+
+## **How to Use**
+1. Open `dhcp-config-lab.pkt` in Cisco Packet Tracer.
+2. Follow the README instructions in the main repository for setup and testing.
+
+## **Files Included**
+- `dhcp-config-lab.pkt`: The Packet Tracer lab file.
+- `network-diagram.png`: The network topology diagram.
+
+## **License**
+This project is licensed under the MIT License.
