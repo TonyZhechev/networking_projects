@@ -106,7 +106,6 @@ _(Diagram to be added here - A high-quality diagram should show the wireless rou
 
 ---
 
-### **Author:** _Your Name_
-### **Date:** _YYYY-MM-DD_
+### **Author: _Tony Zhechev_
 ### **Version:** _1.0_
 
