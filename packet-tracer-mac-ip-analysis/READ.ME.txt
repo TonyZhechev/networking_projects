@@ -1,0 +1,112 @@
+# **Packet Tracer - Examine NAT on a Wireless Router**
+
+## **Project Overview**
+This project demonstrates how to configure and examine **Network Address Translation (NAT)** on a **wireless router** using Cisco Packet Tracer. Additionally, we will configure four PCs to connect to the router via **DHCP** and analyze the NAT process using Packet Tracer’s **simulation mode**.
+
+## **Objectives**
+1. Examine NAT configuration on a wireless router.
+2. Set up four PCs to connect to a wireless router using DHCP.
+3. Monitor and analyze network traffic using NAT.
+
+---
+
+## **Network Topology**
+
+### **Devices Required**
+- **Wireless Router** (e.g., Linksys WRT300N)
+- **4 PCs** (connected wirelessly via DHCP)
+- **ISP Router/Cloud** (simulating Internet connection)
+- **External Web Server** (to test NAT connectivity)
+
+---
+
+## **Network Diagram**
+
+_(Diagram to be added here - A high-quality diagram should show the wireless router, connected devices, NAT translations, and an external server)_
+
+---
+
+## **Step-by-Step Configuration**
+
+### **Step 1: Set Up the Wireless Router**
+1. Open Packet Tracer and place a **Wireless Router**.
+2. Connect the router’s **Internet Port** to an **ISP Router/Cloud** (using an Ethernet cable).
+3. Configure the **Wireless Router**:
+   - **Go to GUI mode** → **Setup Tab** → **Basic Setup**.
+   - **Set Internet Connection Type:** DHCP (to receive an IP from ISP).
+   - **Local Network Configuration:**
+     - **Router IP:** `192.168.1.1`
+     - **Subnet Mask:** `255.255.255.0`
+     - **DHCP Server:** Enabled
+     - **DHCP IP Range:** `192.168.1.100 - 192.168.1.149`
+
+### **Step 2: Configure Wireless Settings**
+1. **Go to Wireless Tab** → **Basic Wireless Settings**.
+2. Set:
+   - **SSID:** `MyWiFi`
+   - **Security Mode:** WPA2-Personal
+   - **Password:** `cisco123`
+
+### **Step 3: Connect PCs to Wi-Fi**
+1. Click on each **PC** → Go to **Desktop > PC Wireless**.
+2. Select **MyWiFi**, enter the password (`cisco123`), and click **Connect**.
+3. Verify the **PC receives an IP** from the router (`192.168.1.100-149`).
+
+### **Step 4: Verify NAT Configuration**
+1. Open the **Wireless Router CLI**.
+2. Enter the following command:
+   ```bash
+   show ip nat translations
+   ```
+3. This displays the mapping of private IPs (`192.168.1.x`) to the router’s **public WAN IP**.
+
+### **Step 5: Test Connectivity & Analyze NAT Traffic**
+#### **1. Test Internet Connectivity**
+- Open **Command Prompt** on a PC and run:
+  ```bash
+  ping 8.8.8.8
+  ```
+- If the ping is successful, NAT is working correctly.
+
+#### **2. Capture NAT Traffic (Simulation Mode)**
+1. Click on **Simulation Mode** (bottom-right in Packet Tracer).
+2. **Filter packets** to show only **ICMP or HTTP**.
+3. Observe how private IPs (`192.168.1.x`) are translated to the public IP when reaching the external server.
+
+---
+
+## **Expected Results**
+- **All four PCs should receive IP addresses** from the DHCP server on the router.
+- **NAT should translate private IPs** to the router’s **public WAN IP**.
+- **Internet connectivity should be successful** when pinging external servers.
+- **Traffic analysis in simulation mode** should show private-to-public IP translation.
+
+---
+
+## **Troubleshooting Guide**
+### **1. PCs Not Getting IP Addresses?**
+✅ Check if **DHCP is enabled** on the wireless router.
+✅ Verify that PCs are connected to the correct **Wi-Fi network (MyWiFi)**.
+
+### **2. No Internet Connectivity?**
+✅ Ensure the **ISP Router/Cloud is connected** to the wireless router’s **Internet Port**.
+✅ Verify the **router received a public IP** from the ISP (GUI → Status → WAN IP).
+
+### **3. NAT Not Translating?**
+✅ Run `show ip nat translations` on the router CLI.
+✅ Ensure PCs are sending traffic to external networks.
+✅ Restart the router and try again.
+
+---
+
+## **Conclusion**
+- This project successfully demonstrates **NAT operation on a wireless router**.
+- **DHCP and NAT** ensure smooth connectivity for internal devices.
+- Using **Packet Tracer’s Simulation Mode**, we can observe **NAT translations in real time**.
+
+---
+
+### **Author:** _Your Name_
+### **Date:** _YYYY-MM-DD_
+### **Version:** _1.0_
+
