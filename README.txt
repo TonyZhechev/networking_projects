@@ -10,6 +10,10 @@ This repository contains my networking projects, created to demonstrate my learn
 2. [Small Network Setup](Small_Network_Setup)
    - ✅ Designed a small business network with multiple VLANs.
    - 📌 Contains topology and configurations.
+3 Packet Tracer - Examine NAT on a Wireless Router.
+- ✅  Examine NAT configuration on a wireless router.
+- Set up four PCs to connect to a wireless router using DHCP.
+- Monitor and analyze network traffic using NAT.
 
 ## 🛠 Technologies Used
 - Cisco Packet Tracer
