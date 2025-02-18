@@ -1,6 +1,6 @@
 Networking Projects
 
-This repository contains my networking projects, created to demonstrate my learning and practical application of networking concepts. Each project includes configurations, diagrams, and documentation.
+This repository contains my networking projects, created to demonstrate my learning and practical application of networking concepts with Cisco Packet Tracer. Each project includes configurations, diagrams, and documentation.
 
 📂 Projects
 1. [Packet Tracer - Configure DHCP on a Wireless Router](PacketTracer_DHCP_WirelessRouter)
