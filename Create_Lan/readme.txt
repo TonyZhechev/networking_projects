@@ -13,13 +13,13 @@ IN THIS PROJECT, YOU WILL LEARN HOW TO **SET UP A SIMPLE LOCAL AREA NETWORK (LAN
 📌 **HERE IS A SIMPLE DIAGRAM THAT SHOWS HOW THE NETWORK IS BUILT.**  
 📌 **EASY TO UNDERSTAND EVEN FOR BEGINNERS!**  
 
-![Network Diagram](network_diagram.png)
+
 
 ## 🔹 DEVICES USED  
 📌 **1 ROUTER**  
 📌 **1 SWITCH**  
-📌 **3 COMPUTERS (PCs)**  
-
+📌 **2 COMPUTERS (PCs)**  
+📌 **1 printer
 ## 🔹 IPV4 ADDRESSING SCHEME  
 | DEVICE | INTERFACE | IP ADDRESS | SUBNET MASK |  
 |--------|-----------|-------------|---------------|  
